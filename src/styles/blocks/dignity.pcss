@@ -1,0 +1,79 @@
+.mainsection__dignity {
+    background-color: rgba( 3, 53, 106, .9);
+    margin-top: 70px;
+    height: 100%;
+}
+
+.mainsection__dignity-list {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainsection__dignity-item {
+    text-align: center;
+    max-width: 200px;
+    margin-right: 10%;
+    &:last-child {
+        margin-right: 0;
+
+    }
+}
+
+.mainsection__dignity-number {
+    font-family: OpenSans-extrabold;
+    font-size: 50px;
+    color: $white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &.dignity--skill:before {
+        content: "более";
+        font-size: 14px;
+        font-family: OpenSans-regular;
+        color: $white;
+        position: absolute;
+        transform: translate(0, -30%)
+    }
+    &.dignity--skill:after {
+        content: "лет";
+        font-size: 14px;
+        font-family: OpenSans-regular;
+        color: $white;
+        position: absolute;
+        bottom: 0;
+        transform: translate(0, 30%);
+    }
+    &.dignity--proj:before {
+        content: "более";
+        font-size: 14px;
+        font-family: OpenSans-regular;
+        color: $white;
+        position: absolute;
+        transform: translate(0, -30%)
+    }
+    &.dignity--guar:before {
+        content: "до";
+        font-size: 14px;
+        font-family: OpenSans-regular;
+        color: $white;
+        position: absolute;
+        transform: translate(0, -30%)
+    }
+    &.dignity--guar:after {
+        content: "лет";
+        font-size: 14px;
+        font-family: OpenSans-regular;
+        color: $white;
+        position: absolute;
+        bottom: 0;
+        transform: translate(0, 30%);
+    }
+}
+
+.mainsection__dignity-desc {
+    font-family: OpenSans-bold;
+    font-size: 18px;
+    color: $white;
+    margin-top: 5px;
+}

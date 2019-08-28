@@ -19,3 +19,6 @@ mixin phone(mod)
   div(class=`phone phone--${mod}`)
     a.phone__number(href="tel:+79229105895") +7 (922) 910 58-95
     a.phone__callback(href="#") Обратный звонок
+
+mixin button(type, mod, mode, text)
+  button(type=`${type}`, class=`button button--${mod} ${mode}`)= text

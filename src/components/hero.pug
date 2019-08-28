@@ -1,3 +1,20 @@
+mixin herolist(item)
+  - var items = [{name: "Проектирование", icon: "proj"}, {name: "Монтаж", icon: "update"}, {name: "Паспортизация", icon: "pass"}, {name: "Сервис", icon: "service"}]
+
+    ul.mainscreen__hero-list
+        each item in items
+            li.mainscreen__hero-item
+                .mainscreen__hero-icon
+                    +icon(`${item.icon}`, 'mainscreen__hero-icon-pic')
+                h2.mainscreen__hero-list-title= item.name 
+
+
 .mainsection__hero
-    .mainscreen__hero-content-row
-    .mainscreen__hero-btn-row
+    .container.container--hero
+        .mainscreen__hero-content-row
+            .mainscreen__hero-content-row
+                .mainsection__hero-title-wrap
+                    h1.mainsection__hero-title Системы вентиляции и кондиционирования в Кирове и области <span>под ключ</span>
+                +herolist('item')
+        .mainscreen__hero-btn-row
+            +button('button', 'hero', 'light', 'Вызвать специалиста')
