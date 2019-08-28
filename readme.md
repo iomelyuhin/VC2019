@@ -5,8 +5,8 @@
 
 ##  Чтобы развернуть проект необходимо:
 ```sh
-$ git clone https://github.com/ownername/reposname.git
-$ cd ls-advanced-portfolio
+$ git clone https://github.com/iomelyuhin/VC2019.git
+$ cd VC2019
 $ yarn
 ```
 
