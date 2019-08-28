@@ -6,10 +6,19 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Portfolio | main page
+    title ПКФ Алмаз | Вентиляция и кондиционирование под ключ
   body
     .wrapper
       .maincontent
-        +image('content/user.jpg', 'user-pic')
-        +icon('link', 'link-class')
-        .icon-bg
+      include ./components/mainsection
+      include ./components/objects
+      include ./components/services
+      include ./components/diamond-drill
+      include ./components/parts
+      include ./components/free
+      include ./components/conditioners
+      include ./components/how-we-work
+      include ./components/reviews
+      include ./components/question
+      include ./components/footer
+

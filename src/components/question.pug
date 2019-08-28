@@ -1,0 +1,9 @@
+section.question
+    .container
+        h2.question__title.section-title-dark
+        .question__desc.desc-dark
+        form.question__form(action="question")
+            input#name(type="text", name="name")
+            input#tel(type="tel", name="tel")
+            textarea#question(name="question", cols="30", rows="10")
+            include ./elems/button
