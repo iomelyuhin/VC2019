@@ -30,7 +30,7 @@
     border: none;
     span {
         background-color: rgba(165, 209, 243, 0.5);
-        color: $btn-color;
+        color: $main-color;
     }
 }
 
@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .project-form__lbl {
@@ -68,21 +68,16 @@
     padding-top: 40px;
     color: $grey;
     outline: none;
-    font-family: OpenSans-bold;
-    font-size: 20px;
+    font-size: 22px;
     &::placeholder {
-        font-family: OpenSans-regular;
         color: $grey;
         transition: transform .4s, color .4s;
-
-
     }
     &:focus {
         &::placeholder {
             transform: translateY(-30px);
             font-family: OpenSans-bold;
-            color: $main-in-dark;
-            transition: transform .4s, color .4s;
+            transition: transform .4s;
     }
     &:change {
         &::placeholder {

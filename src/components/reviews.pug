@@ -1,13 +1,16 @@
 section.reviews
-    .container
-        h2.reviews__title.section-title
+    .container.container--reviews
+        .reviews__title-wrap
+            h2.reviews__title.section-title Наши проекты и отзывы
         .reviews__slider
             .reviews__slider-controls
+                a.reviews__slider-btn 
+                a.reviews__slider-btn 
             ul.reviews__slider-list
                 li.reviews__slider-item
                     .reviews__slider-img
-                        img(src="#", alt="img")
+                        +image("content/woodroombar.jpg", "reviews__slider-pic", "WoodRoomBar")
                     .reviews__slider-content    
-                        .reviews__slider-title.block-title
-                        .reviews__slider-text
-                        a.reviews__slider-link(href="#") 
+                        .reviews__slider-title.block-title ресторан <span>"WoodRoomBar"</span>
+                        .reviews__slider-text Проектирование и монтаж систем вентиляции (приточно-вытяжная и вытяжные системы)
+                        a.reviews__slider-link(href="#") Читать отзыв заказчика
