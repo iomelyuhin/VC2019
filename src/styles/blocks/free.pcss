@@ -1,0 +1,108 @@
+.free {
+    margin-top: 70px;
+    clip-path: polygon(0% 0%, 0% 90%, 50% 100%, 100% 90%, 100% 0%, 50% 10%);
+    background-image: url("../images/content/bg-sale.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+.free__bg-wrap {
+    background-color: rgba(21, 21, 21, .8);
+
+}
+
+.container--free {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0;
+}
+
+.free__title-wrap {
+    max-width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.free__title {
+    border: none;
+    span {
+        background-color: rgba(165, 209, 243, 0.5);
+        color: $btn-color;
+    }
+}
+
+.free__example {
+    margin-top: 20px;
+    color: $text-in-dark;
+    transition: color 0.4s;
+    &:hover {
+        color: $main-in-dark;
+        transition: color 0.4s; 
+        text-decoration: none;
+
+    }
+}
+
+.free__project-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project-form__lbl {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.project-form__lbl-input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid $main-in-dark;
+    width: 300px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-top: 40px;
+    color: $grey;
+    outline: none;
+    font-family: OpenSans-bold;
+    font-size: 20px;
+    &::placeholder {
+        font-family: OpenSans-regular;
+        color: $grey;
+        transition: transform .4s, color .4s;
+
+
+    }
+    &:focus {
+        &::placeholder {
+            transform: translateY(-30px);
+            font-family: OpenSans-bold;
+            color: $main-in-dark;
+            transition: transform .4s, color .4s;
+    }
+    &:change {
+        &::placeholder {
+            visibility: visible;
+        }
+    }
+
+    }
+}
+
+.free__input-icon {
+    position: absolute;
+    font-family: FA;
+    font-size: 14px;
+    color: $main-in-dark;
+    bottom: 18px;
+    left: 5px
+}
+
+.project-form__btn {
+    margin-top: 20px;
+    max-width: 160px;
+}

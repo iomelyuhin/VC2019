@@ -1,7 +1,15 @@
 section.free
-    h2.free__title.section-title-dark
-    a.free__example(href="#")
-    form.free__project-form(action="project-form")
-        input#username(type="text", name="username")
-        input#userphone(type="tel", name="userphone")
-        include ./elems/button
+    .free__bg-wrap
+        .container.container--free
+            .free__title-wrap
+                h2.free__title.section-title.dark оставьте заявку и мы подготовим проектное решение <span>бесплатно!</span>
+                a.free__example(href="#") Пример проектного решения
+            form.free__project-form(action="project-form")
+                label.project-form__lbl
+                    .free__input-icon 
+                    input#username(type="text", name="username" class="project-form__lbl-input" placeholder="Ваше имя")
+                label.project-form__lbl
+                    .free__input-icon 
+                    input#userphone(type="tel", name="userphone" class="project-form__lbl-input" placeholder="Ваш номер телефона")
+                label.project-form__btn
+                    +button("button", "free", "dark", "Отправить заявку")

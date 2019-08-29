@@ -25,11 +25,18 @@
 }
 
 .header__info-vk {
+    text-decoration: none;
+    color: $main-color;
+    transition: color 0.4s;
     &::before {
         margin-right: 13px;
-        content: "";
+        content: "";
         font-family: FA-brands;
         font-size: 15px;
         color: $main-color;
+    }
+    &:hover {
+        color: $text-in-dark;
+        transition: color 0.4s;
     }
 }
