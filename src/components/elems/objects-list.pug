@@ -1,2 +1,15 @@
-ul.objects__list
-    li.objects__item
+mixin objects-list (items)
+    - var items = [{title: "Заводы и предприятия", icon: "fabric", price: "от 20 000 руб"}, {title: "Бани и сауны", icon: "sauna", price: "от 30 000 руб"}, {title: "Квартиры и офисы", icon: "flat", price: "от 5 000 руб"}, {title: "Частные дома", icon: "home", price: "от 15 000 руб"}, {title: "Бассейны", icon: "pool", price: "от 50 000 руб"}, {title: "Рестораны и кафе", icon: "rest", price: "от 80 000 руб"}, {title: "Торговые центры и магазины", icon: "shop", price: "от 50 000 руб"}];
+    
+    ul.objects__list
+        each item in items
+            li.objects__item
+                .objects__icon-wrap
+                    .objects__icon
+                        +icon(`${item.icon}`, "objects__icon-img")
+                .objects__info
+                    .objects__title-wrap
+                        h3.objects__title= item.title
+                    .objects__price= item.price
+
++objects-list(items)
