@@ -1,0 +1,39 @@
+.services {
+    margin-top: 70px;
+}
+
+.container--services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-list {
+    margin-top: 20px;
+}
+
+.services-item {
+    position: relative;
+    padding: 5px 0;
+    text-transform: uppercase;
+    &:before {
+        content: "";
+        position: absolute;
+        font-family: FA;
+        color: $main-color;
+        font-size: 24px;
+        left:-30px;
+        transform: translateY(-16%)
+    }
+}
+
+.services__item-link {
+    color: $main-color;
+    transition: color 0.4s;
+    text-transform: none;
+         &:hover {
+            color: $text-in-dark;
+            text-decoration: none;
+            transition: color 0.4s;
+        }
+}

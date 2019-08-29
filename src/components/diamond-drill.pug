@@ -1,5 +1,9 @@
 section.diamond-drill
-    .container
-        h2.section-title.dark Алмазное бурение
-        .desc-dark
-        include ./elems/button
+    .diamond-drill-bg
+        .container.container--diamond-drill
+            .diamond-drill__title-wrap
+                h2.section-title.dark Алмазное бурение
+            .diamond-drill__desc-wrap
+                .desc.dark Высокоточное бурение отверстий под коммуникации диаметром 30-300мм, глубиной до 800мм в любых материалах.
+            .diamond-drill__btn-wrap
+                +button("button", "dimond-drill", "dark", "узнать стоимость")

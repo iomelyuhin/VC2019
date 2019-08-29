@@ -1,13 +1,43 @@
 .button {
     padding: 20px 30px;
     border-radius: 5px;
+    border: 4px solid;
+    font-family: OpenSans-extrabold;
+    text-transform: uppercase;
+    transition:  background-color 0.4s;
+    border-color: $btn-color;
+    &.light {
+        color: $text-color;
+        &:hover {
+        background-color: $btn-color;
+        transition: background-color 0.4s;
+        }
+    }
+    &.dark {
+        color: $white;
+        &:hover {
+        background-color: $btn-color;
+        transition: background-color 0.4s;
+
+        }
+
+    }
 
     &.button--hero {
-        background-color: $btn-color;
+        background: linear-gradient(to left, $btn-color, transparent 70%);
+        background-color: $btn-color2;
+        border: none;
         color: $white;
         font-family: OpenSans-extrabold;
         text-transform: uppercase;
         max-width: 210px;
         box-shadow: 0px 8px 1.4px 0.6px #000000;
+        transition: background-color 0.4s, transform 0.4s;
+        &:hover {
+            background-color: $btn-color;
+            transition: background-color 0.4s, transform 0.4s;
+            transform: scale(1.05, 1.05);
+        }
+        
     }
 }
