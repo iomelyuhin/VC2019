@@ -10,12 +10,19 @@
 
 .services-list {
     margin-top: 20px;
+    @include phones {
+        width: 80%;
+    }
 }
 
 .services-item {
     position: relative;
     padding: 5px 0;
     text-transform: uppercase;
+    @include phones {
+    padding: 15px 0;
+
+    }
     &:before {
         content: "";
         position: absolute;
@@ -23,7 +30,8 @@
         color: $main-color;
         font-size: 24px;
         left:-30px;
-        transform: translateY(-16%)
+        top: 50%;
+        transform: translateY(-50%)
     }
 }
 

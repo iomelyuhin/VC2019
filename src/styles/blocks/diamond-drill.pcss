@@ -4,7 +4,10 @@
     filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
     background-image: url("../images/content/bg-diamond.jpg");
     background-size: cover;
+    @include phones {
+    clip-path: polygon(0% 0%, 0% 95%, 50% 100%, 100% 95%, 100% 0%, 50% 5%);
 
+    }
 }
 
 .diamond-drill-bg {
@@ -23,9 +26,12 @@
     text-align: center;
     width: 37%;
     margin-top: 20px;
+    @include phones {
+        width: 100%;
+    }
 }
 
 .diamond-drill__btn-wrap {
-    width: 160px;
+    width: 210px;
     margin-top: 30px;
 }

@@ -8,7 +8,7 @@
 }
 
 .reviews__slider {
-    margin-top: 20px;
+    margin-top: 40px;
     position: relative;
     width: 100%;
 }
@@ -23,6 +23,7 @@
     position: absolute;
     transition: color .4s;
     top: 50%;
+    transform: translateY(-50%);
     &:hover {
         color: $text-in-dark;
         transition: color .4s;
@@ -44,9 +45,17 @@
 
     &:first-child {
         left: 50px;
+        @include tablets {
+        left: 10px;
+
+        }
     }
     &:last-child {
         right: 50px;
+        @include tablets {
+            right: 10px;
+
+        }
     }
 }
 
@@ -61,7 +70,9 @@
 
 .reviews__slider-img {
     width: 50%;
-    overflow: hidden;
+    @include tablets {
+        width: 58%;
+    }
 }
 .reviews__slider-pic {
     width: 100%;
@@ -98,6 +109,10 @@
     transition: color .4s, border-color .4s;
     text-decoration: none;
     border-bottom: 1px solid $main-color;
+    @include tablets {
+    border-bottom: none;
+
+    }
     &:hover {
         color: $text-in-dark;
         transition: color .4s, border-color .4s;

@@ -6,10 +6,28 @@
         text-decoration: none;
         font-size: 30px;
         color: $main-color;
+        @include phones {
+            padding: 15px;
+            border: 2px solid $main-color;
+            font-size: 20px;
+            font-family: OpenSans-extrabold;
+            color: $main-color;
+            border-radius: 5px;
+            &:before {
+                content: "";
+                font-family: FA;
+                font-size: 15px;
+                position: relative;
+                left: -4px;
+            }
+        }
     }
     .phone__callback-wrap {
         display: flex;
         justify-content: flex-end;
+        @include phones {
+            display: none;
+        }
     }
     .phone__callback {
         color: $main-color;

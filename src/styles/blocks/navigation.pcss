@@ -1,7 +1,11 @@
 .navigation--header {
+    
     .navigation__list {
         display: flex;
         justify-content: space-around;
+        @include tablets {
+            justify-content: flex-end;
+        }
     }
     
     .navigation__link {
@@ -9,10 +13,51 @@
         transition: color 0.4s, border-color 0.4s;
         text-decoration: none;
         border-bottom: 1px solid $main-color;
+        @include tablets {
+            margin-left: 20px;
+        }
         &:hover {
             border-color: rgba($main-color, 0);
             color: $text-in-dark;
             transition: color 0.4s, border-color 0.4s;
         }
+    }
+    @include tablets {
+        margin-top: 20px;
+    }
+
+    @include phones {
+        display: none;
+        justify-content: flex-end;
+        .navigation__list {
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            overflow: hidden;
+            background-color: #fff;
+            height: 100vh;
+            z-index: 100;
+            justify-content: center;
+            .navigation__item {
+                padding: 20px;
+                font-size: 20px;
+                .navigation__link {
+                    text-decoration: none;
+                    color: $text-color;
+                    text-transform: uppercase;
+                    font-family: OpenSans-bold;
+                    border: none;
+                    margin-left: 0;
+
+                }
+            }
+        }
+    }
+
+    &.active {
+        display: flex;
+        
     }
 }

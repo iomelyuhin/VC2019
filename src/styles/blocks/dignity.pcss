@@ -9,6 +9,9 @@
     padding: 40px 0;
     display: flex;
     justify-content: center;
+    @include phones {
+        padding: 20px 0 20px 0;
+    }
 }
 
 .mainsection__dignity-item {
@@ -28,13 +31,20 @@
     position: relative;
     display: flex;
     justify-content: center;
+    @include phones {
+        font-size: 20px;
+    }
     &.dignity--skill:before {
         content: "более";
         font-size: 14px;
         font-family: OpenSans-regular;
         color: $white;
         position: absolute;
-        transform: translate(0, -30%)
+        transform: translate(0, -30%);
+        @include phones {
+            font-size: 12px;
+            top: -30%;
+        }
     }
     &.dignity--skill:after {
         content: "лет";
@@ -44,6 +54,10 @@
         position: absolute;
         bottom: 0;
         transform: translate(0, 30%);
+        @include phones {
+            font-size: 12px;
+            bottom: -15%;
+        }
     }
     &.dignity--proj:before {
         content: "более";
@@ -51,7 +65,11 @@
         font-family: OpenSans-regular;
         color: $white;
         position: absolute;
-        transform: translate(0, -30%)
+        transform: translate(0, -30%);
+        @include phones {
+            font-size: 12px;
+            top: -30%;
+        }
     }
     &.dignity--guar:before {
         content: "до";
@@ -59,7 +77,11 @@
         font-family: OpenSans-regular;
         color: $white;
         position: absolute;
-        transform: translate(0, -30%)
+        transform: translate(0, -30%);
+        @include phones {
+            font-size: 12px;
+            top: -30%;
+        }
     }
     &.dignity--guar:after {
         content: "лет";
@@ -69,6 +91,10 @@
         position: absolute;
         bottom: 0;
         transform: translate(0, 30%);
+        @include phones {
+            font-size: 12px;
+            bottom: -15%;
+        }
     }
 }
 
@@ -77,4 +103,7 @@
     font-size: 18px;
     color: $white;
     margin-top: 5px;
+    @include phones {
+        font-size: 14px;
+    }
 }

@@ -9,10 +9,18 @@
     width: 28%;
     display: flex;
     flex-direction: column; 
+    @include phones {
+        width: 50%;
+    }
     &:last-child {
         width: 100%;
         .objects__title-wrap {
             width: 20%;
+        }
+        .objects__icon {
+            @include phones {
+                width: 40%;
+            }
         }
     }
 }
@@ -24,6 +32,9 @@
 
 .objects__icon {
     width: 108px;
+    @include phones {
+        width: 80%;
+    }
 }
 
 .objects__icon-img {
@@ -46,6 +57,9 @@
 .objects__title {
     font-family: OpenSans-bold;
     line-height: 1.5;
+    @include phones {
+        font-size: inherit;
+    }
 }
 .objects__price {
     font-size: 14px;

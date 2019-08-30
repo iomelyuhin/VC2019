@@ -2,7 +2,22 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
+    @include tablets {
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: flex-start;
+    }
+}
 
+.info__item--header {
+    @include tablets {
+        padding: 5px;
+    }
+    &:nth-child(2) {
+        @include phones {
+            display: none;
+        }
+    }
 }
 
 .info__workingtime{
