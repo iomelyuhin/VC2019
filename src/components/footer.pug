@@ -1,8 +1,24 @@
 footer.footer
-    .container
-        a.footer__logo(href="#")
+    .container.container--footer
+        a.footer__logo(href="#") 
+            +image("content/logo-footer.png", "footer__logo-img", "Логотип ПКФ Алмаз")
         ul.footer__list
             li.footer__item
-                a.footer__link
-        include ./elems/adress-info
-        include ./elems/phone
+                a.footer__link Вызвать специалиста
+            li.footer__item
+                a.footer__link Отправить вопрос
+            li.footer__item
+                a.footer__link Подобрать кондиционер
+            li.footer__item
+                a.footer__link Уточнить стоимость
+            li.footer__item
+                a.footer__link Заказать алмазное бурение
+        adress.info.info--footer
+            ul.info__list
+                li.info__item
+                    .info__workingtime Пн-Пт: с 9 до 20
+                li.info__item
+                    .info__adress ул. Луганская, 67
+                li.info__item
+                    a(href="https://vk.com/pkf_almaz").info__social vk.com/pkf_almaz
+        +phone("footer")

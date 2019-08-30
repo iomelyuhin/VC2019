@@ -3,18 +3,16 @@
         display: flex;
         justify-content: space-around;
     }
-    .navigation__item {
+    
+    .navigation__link {
         color: $main-color;
-        transition: color 0.4s;
+        transition: color 0.4s, border-color 0.4s;
+        text-decoration: none;
+        border-bottom: 1px solid $main-color;
         &:hover {
+            border-color: rgba($main-color, 0);
             color: $text-in-dark;
-            text-decoration: none;
-            transition: color 0.4s;
+            transition: color 0.4s, border-color 0.4s;
         }
     }
 }
-
-/* .navigation__list {
-    display: flex;
-    justify-content: space-around;
-} */

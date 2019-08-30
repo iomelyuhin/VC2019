@@ -1,0 +1,86 @@
+.footer {
+    position: fixed;
+    background: $text-color;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    width: 100vw;
+    color: $grey;
+    height: 300px;
+}
+
+.container--footer {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__item {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.footer__link {
+    color: rgba($white, .7);
+    border-bottom: 1px solid rgba($white, .7);
+    transition: color 0.4s, border-color 0.4s;
+    &:hover {
+        color: $text-in-dark;
+        border-color: rgba($white, 0);
+        transition: color 0.4s, border-color 0.4s;
+    }
+}
+
+.info--footer {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.info__item {
+    padding: 10px 0;
+    font-size: 16px;
+    .info__workingtime, 
+    .info__adress,
+    .info__social{
+        color: rgba($white, .7);
+        
+        &:before {
+            color: $text-in-dark;
+            transition: color .4s;
+
+        }
+    }
+    .info__social:hover {
+        color: $text-in-dark;
+        transition: color .4s;
+    }
+}
+
+
+.phone--footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    .phone__number.phone__number--footer {
+        color: $text-in-dark;
+        font-size: 30px;
+    }
+    .phone__callback.phone__callback--footer {
+        color: $white;
+        margin-top: 20px;
+    }
+}

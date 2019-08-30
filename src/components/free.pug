@@ -6,13 +6,13 @@ section.free
                 a.free__example(href="#") Пример проектного решения
             form.free__project-form(action="project-form")
                 label.project-form__lbl
-                    input#username(type="text", name="username" class="project-form__lbl-input" required)
-                    .free__input-icon 
-                    .free__input-title Ваше имя
+                    input#username(type="text", name="username" class="project-form__lbl-input form__input" required)
+                    .free__input-icon.input__icon 
+                    .free__input-title.input__title Ваше имя
                 label.project-form__lbl
-                    input#userphone(type="tel", name="userphone" class="project-form__lbl-input" required)
-                    .free__input-icon 
-                    .free__input-title Ваш номер телефона
+                    input#userphone(type="tel", name="userphone" class="project-form__lbl-input form__input" required)
+                    .free__input-icon.input__icon 
+                    .free__input-title.input__title Ваш номер телефона
 
                 label.project-form__btn
-                    +button("button", "free", "dark", "Отправить заявку")
+                    +button("submit", "free", "dark", "Отправить заявку")

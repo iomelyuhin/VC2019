@@ -1,0 +1,60 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form__lbl {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form__input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid $main-in-dark;
+    width: 300px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    margin-top: 20px;
+    color: $grey;
+    outline: none;
+    font-size: 22px;
+    &:focus {
+        transition: border-color .4s;
+        border-color: $text-in-dark;
+    }
+}
+
+.input__title {
+    position: absolute;
+    color: $grey;
+    bottom: 15px;
+    left: 30px;
+    transition: bottom .4s, color .4s, font-size .4s;
+    cursor: text;
+}
+
+input:focus ~ .input__icon {
+  color: $text-in-dark;
+    transition: color 0.4s;
+}
+
+input:focus ~ .input__title,
+input:valid ~ .input__title {
+  bottom: 50px;
+  font-size: 20px;
+  font-family: OpenSans-bold;
+  color: $text-in-dark;
+  transition: bottom .4s, color .4s, font-size .4s;
+}
+
+.input__icon {
+    position: absolute;
+    font-family: FA;
+    font-size: 14px;
+    color: $main-in-dark;
+    bottom: 18px;
+    left: 5px
+}

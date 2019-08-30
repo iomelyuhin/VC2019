@@ -1,9 +1,20 @@
 section.question
-    .container
-        h2.question__title.section-title-dark
-        .question__desc.desc-dark
-        form.question__form(action="question")
-            input#name(type="text", name="name")
-            input#tel(type="tel", name="tel")
-            textarea#question(name="question", cols="30", rows="10")
-            include ./elems/button
+    .question__bg-wrap
+        .container.container--question
+            .question__title-wrap
+                h2.question__title.section-title.dark есть вопрос?
+                .question__desc.desc.dark Задайте его напрямую нашим специалистам, заполнив форму. Мы ответим вам как можно быстрее.
+            form.question__form.form(action="question")
+                label.question__form-lbl.form__lbl
+                    input#name(type="text", name="name" class="question__input form__input" required)
+                    .question__input-icon.input__icon 
+                    .question__input-title.input__title Ваше имя
+                label.question__form-lbl.form__lbl
+                    input#phone(type="text", name="phone" class="question__input form__input" required)
+                    .question__input-icon.input__icon 
+                    .question__input-title.input__title Ваш номер телефона
+                label.question__form-lbl.form__lbl
+                    input#message(type="text", name="message" class="question__input form__input" required)
+                    .question__input-icon.input__icon 
+                    .question__input-title.input__title Ваш вопрос
+                +button("submit", "question", "dark", "Отправить вопрос")

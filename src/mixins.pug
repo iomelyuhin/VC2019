@@ -17,8 +17,10 @@ mixin nav(mod, items, activeItem)
 
 mixin phone(mod)
   div(class=`phone phone--${mod}`)
-    a.phone__number(href="tel:+79229105895") +7 (922) 910 58-95
-    a.phone__callback(href="#") Обратный звонок
+    a(class=`phone__number phone__number--${mod}` href="tel:+79229105895") +7 (922) 910 58-95
+    .phone__callback-wrap
+      a(class=`phone__callback phone__callback--${mod}` href="#") Обратный звонок
 
 mixin button(type, mod, mode, text)
   button(type=`${type}`, class=`button button--${mod} ${mode}`)= text
+
