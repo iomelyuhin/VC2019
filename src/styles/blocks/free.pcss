@@ -58,6 +58,15 @@
     position: relative;
 }
 
+.free__input-title {
+    position: absolute;
+    color: $grey;
+    bottom: 15px;
+    left: 30px;
+    transition: bottom .4s, color .4s, font-size .4s;
+    cursor: text;
+}
+
 .project-form__lbl-input {
     background: none;
     border: none;
@@ -74,18 +83,28 @@
         transition: transform .4s, color .4s;
     }
     &:focus {
-        &::placeholder {
-            transform: translateY(-30px);
-            font-family: OpenSans-bold;
-            transition: transform .4s;
+        
+            transition: border-color .4s;
+            border-color: $white;
     }
-    &:change {
-        &::placeholder {
-            visibility: visible;
-        }
-    }
+    
+   
+    
 
-    }
+    
+}
+
+input:focus ~ .free__input-icon {
+  color: $white;
+    transition: color 0.4s;
+}
+
+input:focus ~ .free__input-title,
+input:valid ~ .free__input-title {
+  bottom: 50px;
+  font-size: 20px;
+  color: $white;
+  transition: bottom .4s, color .4s, font-size .4s;
 }
 
 .free__input-icon {
