@@ -5,6 +5,10 @@
     background-size: cover;
     width: 100%;
     margin-bottom: 200px;
+    @include phones {
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%, 50% 5%);
+
+    }
 }
 
 .question__bg-wrap {
@@ -22,6 +26,9 @@
     max-width: 50%;
     text-align: center;
     flex-direction: column;
+    @include phones {
+        max-width: 100%;
+    }
 }
 
 .question__desc {

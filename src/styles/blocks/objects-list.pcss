@@ -16,6 +16,9 @@
         width: 100%;
         .objects__title-wrap {
             width: 20%;
+            @include phones {
+                width: 100%;
+            }
         }
         .objects__icon {
             @include phones {
@@ -52,6 +55,9 @@
 .objects__title-wrap {
     width: 50%;
     display: inline-block;
+    @include phones {
+        width: 100%;
+    }
 }
 
 .objects__title {

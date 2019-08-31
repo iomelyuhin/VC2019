@@ -1,9 +1,14 @@
 .how-we-work {
     margin-top: 70px;
-    clip-path: polygon(0% 0%, 0% 90%, 50% 100%, 100% 90%, 100% 0%, 50% 10%);
     background-image: url("../images/content/bg-how-we-work.jpg");
+    clip-path: polygon(0% 0%, 0% 90%, 50% 100%, 100% 90%, 100% 0%, 50% 10%);
     background-size: cover;
     width: 100%;
+
+    @include phones {
+    clip-path: polygon(0% 0%, 0% 95%, 50% 100%, 100% 95%, 100% 0%, 50% 5%);
+
+    }
 }
 
 .how-we-work__bg-wrap {
@@ -19,6 +24,10 @@
 
 .how-we-work__list {
     margin-top: 70px;
+
+    @include phones {
+        margin-left: 30px;
+    }
 }
 
 .how-we-work__item {

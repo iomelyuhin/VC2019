@@ -10,12 +10,20 @@
     max-width: 45%;
     text-align: center;
     margin-top: 20px;
+    @include phones {
+        max-width: 100%;
+    }
 }
 
 .conditioners__list {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .conditioners__item {
@@ -23,6 +31,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include phones {
+        width: 100%;
+        margin-top: 40px;
+    }
 }
 
 .conditioners__img {
@@ -37,6 +49,9 @@
 .conditioners__info {
     text-align: center;
     margin-top: 13px;
+    @include phones {
+        margin-top: 20px;
+    }
 }
 
 .conditioners__price {

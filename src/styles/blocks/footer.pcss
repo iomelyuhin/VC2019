@@ -8,12 +8,21 @@
     width: 100vw;
     color: $grey;
     height: 300px;
+    @include phones {
+        height: 600px;
+
+    }
 }
 
 .container--footer {
     display: flex;
     height: 100%;
     justify-content: space-between;
+    @include phones {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 .footer__logo {

@@ -4,6 +4,10 @@
     background-image: url("../images/content/bg-sale.jpg");
     background-size: cover;
     width: 100%;
+    @include phones {
+        clip-path: polygon(0% 0%, 0% 95%, 50% 100%, 100% 95%, 100% 0%, 50% 5%);
+
+    }
 }
 
 .free__bg-wrap {
@@ -22,7 +26,10 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    @include phones {
+        max-width:100%;
 
+    }
 }
 
 .free__title {
@@ -61,5 +68,5 @@
 
 .project-form__btn {
     margin-top: 20px;
-    max-width: 160px;
+    max-width: 210px;
 }

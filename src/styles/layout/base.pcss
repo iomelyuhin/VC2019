@@ -16,7 +16,7 @@ html {
 
 body {
   font-family: 'OpenSans-regular', Helvetica, sans-serif;
-  font-size: 18Px;
+  font-size: 18px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -124,4 +124,7 @@ img {
   margin-bottom: 300px;
   position: relative;
   background: $white;
+  @include phones {
+    margin-bottom: 600px;
+  }
 }
