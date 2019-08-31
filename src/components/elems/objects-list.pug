@@ -9,7 +9,7 @@ mixin objects-list (items)
                         +icon(`${item.icon}`, "objects__icon-img")
                 .objects__info
                     .objects__title-wrap
-                        h3.objects__title= item.title
+                        h3.objects__title-list= item.title
                     .objects__price= item.price
 
 +objects-list(items)

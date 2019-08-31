@@ -24,6 +24,7 @@
     transition: color .4s;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
     @include phones {
         top: 60%
     }
@@ -44,6 +45,8 @@
         border-radius: 50%;
         transform: translate (-50%, -50%);
         transition: border-color .4s;
+        z-index: -1;
+        background-color: rgba($white, .5);
     }
 
     &:first-child {
@@ -69,6 +72,7 @@
 .reviews__slider-item {
     display: flex;
     justify-content: center;
+    position: relative;
     @include phones {
         flex-direction: column;
         align-items: center;
@@ -76,6 +80,7 @@
 }
 
 .reviews__slider-img {
+    position: relative;
     width: 50%;
     @include tablets {
         width: 58%;

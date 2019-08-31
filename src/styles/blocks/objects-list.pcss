@@ -50,6 +50,9 @@
 
 .objects__info {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .objects__title-wrap {
@@ -59,9 +62,11 @@
     }
 }
 
-.objects__title {
+.objects__title-list {
     font-family: OpenSans-bold;
     line-height: 1.5;
+    display: flex;
+    justify-content: center;
     @include phones {
         font-size: inherit;
     }
