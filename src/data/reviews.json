@@ -1,0 +1,16 @@
+[
+    {
+        "id" : 0,
+        "title" : "ресторан \"WoodRoomBar\"",
+        "desc" : "Проектирование и монтаж систем вентиляции (приточно-вытяжная и вытяжные системы)",
+        "img" : "woodroombar.jpg",
+        "feedback" : "отзыв"
+    },
+    {
+        "id" : 1,
+        "title" : "2Завод INTEK",
+        "desc" : "2Lorem",
+        "img" : "woodroombar.jpg",
+        "feedback" : ""
+    }
+]

@@ -3,31 +3,31 @@ import Flickity from 'vue-flickity';
 
 
 new Vue ({
-    el: "#slider-parts-wiget",
-    template: "#slider-parts",
+    el: "#slider-reviews-wiget",
+    template: "#slider-reviews",
     components: {
         Flickity
     },
     data() {
         return {
-            parts: [],
+            reviews: [],
             flickityOptions: {
                 initialIndex: 0,
                 prevNextButtons: false,
                 pageDots: false,
                 wrapAround: false,
                 adaptiveHeight: true,
-                groupCells: true
-
+                groupCells: false,
+                setGallerySize: false
             }
         }
     },
     methods: {
         makeArrWithRequiredImages(data) {
             return data.map(item => {
-                const requiredPic = require(`../images/${item.logo}`);
+                const requiredPic = require(`../images/content/${item.img}`);
 
-                item.logo = requiredPic
+                item.img = requiredPic
                 return item
             })
         },
@@ -40,8 +40,10 @@ new Vue ({
         }
     },
     created() {
-        const data = require("../data/parts.json");
-        this.parts = this.makeArrWithRequiredImages(data);
+        const data = require("../data/reviews.json");
+        this.reviews = this.makeArrWithRequiredImages(data);
+        
+        
         
     }
 

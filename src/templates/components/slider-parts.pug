@@ -1,0 +1,18 @@
+script(type="text/x-template")#slider-parts
+    .parts__partners-slider
+        .parts__partners-controls
+            button(type="button" @click="previous()").parts__controls.controls--prev 
+            button(type="button" @click="next()").parts__controls.controls--next 
+        .parts__slider-wrap
+            ul.parts__partners-list-flick
+                flickity(ref="flickity" :options="flickityOptions")
+                    li.parts__partners-item(
+                        v-for="part in parts"
+                        :key="part.id"
+                    )
+                        img(
+                            :src="part.logo"
+                            class="parts__logobox-img"
+                            :alt="part.alt"
+                            )
+

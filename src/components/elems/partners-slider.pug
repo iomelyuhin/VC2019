@@ -1,9 +1,9 @@
 mixin partners-list (items)
     - var items = [{partner: "Ballu", logo: "part-logos/ballu.png"}, {partner: "Electrolux", logo: "part-logos/electrolux.png"}, {partner: "Fujitsu", logo: "part-logos/fujitsu.jpg"}, {partner: "Тепломаш", logo: "part-logos/teplomash.png"}]
-    .parts__partners-slider
+    .parts__partners-slidernull
         .parts__partners-controls
-            a(href="#").parts__controls.controls--prev 
-            a(href="#").parts__controls.controls--next 
+            button(type="button").parts__controls.controls--prev 
+            button(type="button").parts__controls.controls--next 
         .parts__slider-wrap
             ul.parts__partners-list
                 each item in items

@@ -1,0 +1,20 @@
+script(type="text/x-template")#slider-reviews
+    ul.reviews__slider-list
+        .reviews__slider-controls
+            button(type="button" @click="previous()").reviews__slider-btn 
+            button(type="button" @click="next()").reviews__slider-btn 
+        flickity(ref="flickity" :options="flickityOptions").reviews__flickity
+            li.reviews__slider-item(v-for="review in reviews")
+                .reviews__slider-img
+                    img(
+                        :src="review.img"
+                        :alt="review.alt"
+                        class="reviews__slider-pic"
+                    )
+                .reviews__slider-content    
+                    .reviews__slider-title.block-title {{review.title}}
+                    .reviews__slider-text {{review.desc}}
+                    a.reviews__slider-link(
+                        v-if="review.feedback"
+                    ) Читать отзыв заказчика
+        

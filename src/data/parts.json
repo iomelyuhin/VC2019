@@ -1,0 +1,62 @@
+[
+    {
+        "id" : 0,
+        "logo" : "part-logos/ballu.png",
+        "alt" : "Ballu logo"
+    }, 
+    {
+        "id" : 1,
+        "logo": "part-logos/electrolux.png",
+        "alt": "Electrolux logo"
+    }, 
+    {
+        "id" : 2,
+        "logo": "part-logos/fujitsu.jpg",
+        "alt": "Fujitsu logo"
+    }, 
+    {
+        "id" : 3,
+        "logo": "part-logos/teplomash.png",
+        "alt": "Teplomash logo"
+    },
+    {
+        "id" : 4,
+        "logo" : "part-logos/Mitsubishi-electric.png",
+        "alt" : "Mitsubishi electric logo"
+    }, 
+    {
+        "id" : 5,
+        "logo": "part-logos/system-air.png",
+        "alt": "System Air logo"
+    }, 
+    {
+        "id" : 6,
+        "logo": "part-logos/vts.jpg",
+        "alt": "Vts logo"
+    }, 
+    {
+        "id" : 7,
+        "logo": "part-logos/tosot.png",
+        "alt": "Tosot logo"
+    },
+    {
+        "id" : 8,
+        "logo": "part-logos/veza.png",
+        "alt": "Веза logo"
+    },
+    {
+        "id" : 9,
+        "logo": "part-logos/ned.png",
+        "alt": "NED logo"
+    },
+    {
+        "id" : 10,
+        "logo": "part-logos/lessar.png",
+        "alt": "Lessar logo"
+    },
+    {
+        "id" : 11,
+        "logo": "part-logos/daikin.png",
+        "alt": "Daikin logo"
+    }
+]

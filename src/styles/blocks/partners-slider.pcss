@@ -1,33 +1,29 @@
 .parts__partners-slider {
-    width: 60%;
-    height: 60px;
+    width: 80%;
     margin: 40px 0;
     position: relative;
     @include tablets {
-        width: 100%;
+        width: 80%;
     }
     @include phones {
-        width: 100%;
-        height: 100px;
+        width: 90%;
     }
 }
 
 
 .parts__partners-list {
-    position: absolute;
     display: flex;
-    justify-content: center;
-    max-height: 100px;
+    align-items: center;
+    position: relative;
     @include phones {
         display: -webkit-box;
     }
 }
 
 .parts__partners-item {
-    margin: 0 20px;
+    width: 33.3%;
     @include phones {
-        display: flex;
-        align-items: center;
+        width: 50%;
     }
 }
 
@@ -48,33 +44,33 @@
 
     }
     &:first-child {
-        left: -20px;
+        left: -40px;
         top: 50%;
         transform: translateY(-50%);
+        
     }
     &:last-child {
         top: 50%;
         transform: translateY(-50%);
-        right: -20px;
+        right: -40px;
     }
 }
 
 .parts__slider-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 100%;
-    position: relative;
     overflow: hidden;
 }
 
 .parts__logobox-img {
+    width: 100%;
     filter: grayscale(100%);
-    height: 40px;
     transition: filter 0.4s;
     &:hover {
         filter: none;
         transition: filter 0.4s;
     }
+}
+
+.parts__partners-slidernull {
+    display: none;
 }
