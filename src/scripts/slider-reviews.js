@@ -1,5 +1,8 @@
 import Vue from "vue";
 import Flickity from 'vue-flickity';
+import Vue2TouchEvents from 'vue2-touch-events'
+
+Vue.use(Vue2TouchEvents)
 
 
 new Vue ({
@@ -11,6 +14,8 @@ new Vue ({
     data() {
         return {
             reviews: [],
+            isActiveFeedback: false,
+            isActiveContent: true,
             flickityOptions: {
                 initialIndex: 0,
                 prevNextButtons: false,
@@ -31,19 +36,39 @@ new Vue ({
                 return item
             })
         },
+        clearFeedback() {
+            this.isActiveFeedback = false;
+            this.isActiveContent = true;
+            console.log(1111);
+            
+        },
         next() {
           this.$refs.flickity.next();
+          this.isActiveFeedback = false;
+          this.isActiveContent = true;
         },
+
         
         previous() {
           this.$refs.flickity.previous();
+          this.isActiveFeedback = false;
+          this.isActiveContent = true;
+        },
+
+        activateFeedback() {
+            this.isActiveFeedback = true;
+            this.isActiveContent = false;
+        },
+        activateContent() {
+            this.isActiveFeedback = false;
+            this.isActiveContent = true;
         }
     },
     created() {
         const data = require("../data/reviews.json");
         this.reviews = this.makeArrWithRequiredImages(data);
         
-        
+
         
     }
 

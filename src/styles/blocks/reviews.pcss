@@ -30,7 +30,7 @@
     transform: translateY(-50%);
     z-index: 10;
     @include phones {
-        top: 60%
+        top: 240px;
     }
     &:hover {
         color: $text-in-dark;
@@ -55,6 +55,7 @@
 
     &:first-child {
         left: 0;
+        transform: translateY(-25px)
         @include tablets {
         left: 10px;
 
@@ -62,6 +63,7 @@
     }
     &:last-child {
         right: 0;
+        transform: translateY(-25px)
         @include tablets {
             right: 10px;
 
@@ -71,9 +73,9 @@
 
 .reviews__slider-list .reviews__flickity {
     width: 100%;
-    height: 360px;
+    height: 370px;
     @include phones {
-        height: 450px;
+        height: 614px;
     }
 }
 
@@ -86,6 +88,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    overflow: hidden;
     min-width: 100%;
     @include phones {
         flex-direction: column;
@@ -96,11 +99,13 @@
 .reviews__slider-img {
     position: relative;
     width: 50%;
+
     @include tablets {
         width: 58%;
     }
     @include phones {
         width: 100%;
+        height: 200px;
     }
 }
 .reviews__slider-pic {
@@ -108,18 +113,28 @@
     /* height: 380px; */
 
 }
+.reviews__slider-cont-wrap {
+    position: relative;
+    width: 30%;
+}
 
 .reviews__slider-content {
-    /* flex: 1; */
-    width: 30%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.4s;
+    position: relative;
     padding-left: 30px;
     padding-top: 40px;
-    @include phones {
-        width: 100%;
-        padding: 20px 0 0 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    &.active {
+        opacity: 1;
+        transition: opacity 0.4s;
+        @include phones {
+            width: 100%;
+            padding: 20px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
@@ -167,6 +182,89 @@
         left: -25px;
         transform: translateY(25%)
     }
+}
+
+.reviews__slider-feedback {
+    opacity: 0;
+    transition: opacity 0.4s;
+    position: absolute;
+    padding-left: 30px;
+    &.active {
+        opacity: 1;
+        top: 0;
+        transition: opacity 0.4s;
+
+        @include phones {
+            width: 100%;
+            padding: 70px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+.reviews__slider-fedback-text {
+    position: relative;
+    &:before {
+        content: "";
+        font-family: FA;
+        color: $grey;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-110%)
+    }
+    &:after {
+        content: "";
+        font-family: FA;
+        color: $grey;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateX(  110%)
+    }
+}
+
+.review__feedback-author {
+    margin-top: 20px;
+    font-family: OpenSans-bold;
+    text-align: right;
+}
+
+.review__feedback-author-position {
+    /* font-family: OpenSans-bold; */
+    font-size: 14px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.reviews__slider-feedback-link {
+    position: relative;
+    margin-top: 30px;
+    display: inline-block;
+    color: $main-color;
+    margin-left: 25px;
+    transition: color .4s, border-color .4s;
+    text-decoration: none;
+    border-bottom: 1px solid $main-color;
+    @include tablets {
+    border-bottom: none;
+
+    }
+    &:hover {
+        color: $text-in-dark;
+        transition: color .4s, border-color .4s;
+        border-color: rgba($main-color, 0);
+    }
+    &:before {
+        content: "";
+        font-family: FA;
+        font-size: 14px;
+        position: absolute;
+        left: -25px;
+        transform: translateY(25%)
+    }
+
 }
 
 .flickity-viewport {

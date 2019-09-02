@@ -4,17 +4,42 @@ script(type="text/x-template")#slider-reviews
             button(type="button" @click="previous()").reviews__slider-btn 
             button(type="button" @click="next()").reviews__slider-btn 
         flickity(ref="flickity" :options="flickityOptions").reviews__flickity
-            li.reviews__slider-item(v-for="review in reviews")
+            li.reviews__slider-item(
+                v-for="review in reviews"
+                v-touch:swipe="clearFeedback"
+                @dragenter="clearFeedback"
+            )
                 .reviews__slider-img
                     img(
                         :src="review.img"
                         :alt="review.alt"
                         class="reviews__slider-pic"
                     )
-                .reviews__slider-content    
-                    .reviews__slider-title.block-title {{review.title}}
-                    .reviews__slider-text {{review.desc}}
-                    a.reviews__slider-link(
+                .reviews__slider-cont-wrap
+                    .reviews__slider-content(
+                        :class="{active: isActiveContent}"
+                    )    
+                        .reviews__slider-title.block-title {{review.title}}
+                        .reviews__slider-text {{review.desc}}
+                        a.reviews__slider-link(
+                            v-if="review.feedback"
+                            @click="activateFeedback"
+                        ) Читать отзыв заказчика
+                    .reviews__slider-feedback(
+                        :class="{active: isActiveFeedback}") 
+                        .reviews__slider-fedback-text(
                         v-if="review.feedback"
-                    ) Читать отзыв заказчика
+
+                        ) {{review.feedback}}
+                        .review__feedback-author(
+                        v-if="review.feedback"
+
+                        ) {{review.author}}
+                        .review__feedback-author-position(
+                        v-if="review.feedback"
+
+                        ) {{review.position}}
+                        a.reviews__slider-feedback-link(
+                            @click="activateContent"
+                        ) Описание объекта
         

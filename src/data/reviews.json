@@ -4,13 +4,26 @@
         "title" : "ресторан \"WoodRoomBar\"",
         "desc" : "Проектирование и монтаж систем вентиляции (приточно-вытяжная и вытяжные системы)",
         "img" : "woodroombar.jpg",
-        "feedback" : "отзыв"
+        "feedback" : "Текст отзыва. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos saepe quam esse odio, amet nemo et optio, laborum nobis deserunt cumque. Consectetur fugiat eius libero? Consectetur fugiat eius libero?",
+        "author" : "Иван Иванович",
+        "position" : "Директор"
     },
     {
         "id" : 1,
-        "title" : "2Завод INTEK",
-        "desc" : "2Lorem",
-        "img" : "woodroombar.jpg",
-        "feedback" : ""
+        "title" : "Завод INTEK",
+        "desc" : "Монтаж систем вентиляции (Приточная система, вытяжная система, местные вытяжки)",
+        "img" : "intek.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
+    },
+    {
+        "id" : 2,
+        "title" : "ФСБ",
+        "desc" : "Монтаж систем вентиляции и кондиционирования",
+        "img" : "fsb.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
     }
 ]
