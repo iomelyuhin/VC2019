@@ -26,6 +26,7 @@ script(type="text/x-template")#slider-reviews
                             @click="activateFeedback"
                         ) Читать отзыв заказчика
                     .reviews__slider-feedback(
+                        v-touch:swipe="clearFeedback"
                         :class="{active: isActiveFeedback}") 
                         .reviews__slider-fedback-text(
                         v-if="review.feedback"
