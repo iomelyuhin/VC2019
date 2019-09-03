@@ -5,3 +5,8 @@ if (process.env.NODE_ENV === "development") {
 
 import "./scripts/slider-parts";
 import "./scripts/slider-reviews";
+import "./scripts/form";
+import "./scripts/formPopup";
+import "./scripts/formWithMessage";
+import "./scripts/btns";
+import "./scripts/anchorlink";

@@ -6,14 +6,7 @@ mixin icon(name, className)
 mixin image(path, className, alt)
   img(src=require(`images/${path}`) class=className alt=alt)
 
-mixin nav(mod, items, activeItem)
-  - var items = [{name:"Объекты", link: "#objets"}, {name: "Услуги", link: "#services"}, {name: "Кондиционеры", link: "#conditions"}, {name: "Отзывы", link: "#reviews"}]
 
-  nav(class=`navigation navigation--${mod} ${activeItem}`) 
-    ul(class=`navigation__list`)
-      each item in items
-        li(class=`navigation__item`) 
-          a(href=`${item.link}` class=`navigation__link`)= item.name
 
 mixin phone(mod)
   div(class=`phone phone--${mod}`)

@@ -1,0 +1,49 @@
+.imgPopup__container {
+    position: fixed;
+    top: 250%;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba($text-color, 0.4);
+    transition: opacity 0.4s;
+    &.active {
+        top: 0;
+        opacity: 1;
+        transition: opacity 0.4s;
+    }
+}
+
+.imgPopup__wrap {
+    width: 60%;
+    max-height: 60vh;
+    position: relative;
+}
+
+.imgPopup__btn-close[type=button] {
+    font-family: FA;
+    color: $main-color;
+    width: 45px;
+    height: 45px;
+    border: 2px solid $main-color;
+    background-color: rgba($white, .5);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%,-50%);
+}
+
+.imgPopup__img-wrap {
+    width: 100%;
+    height: 70vh;
+}
+.imgPopup__pic {
+     width: 100%;
+    max-height: 60vh;
+
+}

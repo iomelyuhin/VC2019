@@ -1,18 +1,20 @@
-section.free
+section.free#projects
     .free__bg-wrap
         .container.container--free
             .free__title-wrap
                 h2.free__title.section-title.dark оставьте заявку и мы подготовим проектное решение <span>бесплатно!</span>
-                a.free__example(href="#") Пример проектного решения
-            form.free__project-form(action="project-form")
+                a.free__example.imgPopup-project(href="#") Пример проектного решения
+            form.free__project-form(action="project-form")#form
                 label.project-form__lbl
-                    input#username(type="text", name="username" class="project-form__lbl-input form__input" required)
+                    input#username(type="text", name="name" class="project-form__lbl-input form__input" required)
+                    .error
                     .free__input-icon.input__icon 
                     .free__input-title.input__title Ваше имя
                 label.project-form__lbl
-                    input#userphone(type="tel", name="userphone" class="project-form__lbl-input form__input" required)
+                    input#userphone(type="tel", name="phone" class="project-form__lbl-input form__input" required)
+                    .error
                     .free__input-icon.input__icon 
                     .free__input-title.input__title Ваш номер телефона
 
-                label.project-form__btn
-                    +button("submit", "free", "dark", "Отправить заявку")
+                .form__overlay#formOverlayProj 
+                button(type="submit", class=`button button--free dark` id=`sendForm`) Отправить заявку
