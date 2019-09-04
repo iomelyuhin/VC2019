@@ -1,8 +1,9 @@
 header.mainsection__header.header
     .container.container--header
-        .header__logo
-            +image('content/logo-head.png', 'header__logo-img', 'Логотип "ПКФ Алмаз"')
-        .header__information
-            include ./elems/adress-info
-            include ./elems/navigation
-        include ./elems/phone
+        .header__top-wrap
+            .header__logo
+                +image('content/logo-head.png', 'header__logo-img', 'Логотип "ПКФ Алмаз"')
+            .header__information
+                include ./elems/adress-info
+            include ./elems/phone
+        include ./elems/navigation

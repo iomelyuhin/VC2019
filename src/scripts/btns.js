@@ -3,6 +3,8 @@ const form = document.querySelector('.form-wrap');
 const wrapper = document.querySelector('.form__wrap-container');
 const condBtn = document.querySelector('.button--conditioners');
 const closeBtn = document.querySelector('.form__btn-close');
+const formBtn = document.querySelector('#sendFormPopup');
+const formOverlay = document.querySelector('#formOverlayPopup');
 
 const imgBtn = document.querySelector('.imgPopup-proj');
 const imgBtnProj = document.querySelector('.imgPopup-project');
@@ -12,12 +14,17 @@ const closeImgBtn = document.querySelector('.imgPopup__btn-close');
 function hideForm() {
     form.classList.remove('active');
     wrapper.classList.remove('active');
+    formBtn.classList.remove('disabled');
+    formOverlay.classList.remove('active');
 }    
 
 
 function showForm() {
+    formBtn.classList.remove('disabled');
+    formOverlay.classList.remove('active');
     form.classList.add('active');
     wrapper.classList.add('active');
+
 }
 
 function showImg() {

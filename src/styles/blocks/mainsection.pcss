@@ -5,5 +5,16 @@
     clip-path: polygon(0% 0%, 0% 90%, 50% 100%, 100% 90%, 100% 0%);
     @include phones {
         clip-path: polygon(0% 0%, 0% 98%, 50% 100%, 100% 98%, 100% 0%);
+        background-image: url('../images/content/bg-hero-320.jpg');
+    }
+    @include tablets {
+        background-image: url('../images/content/bg-hero-768.jpg');
+
+    }
+}
+
+.mainscreen__hero-list-title {
+    @include phones {
+        color: $white;
     }
 }

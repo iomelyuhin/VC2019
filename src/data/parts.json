@@ -1,12 +1,12 @@
 [
     {
         "id" : 0,
-        "logo" : "part-logos/ballu.png",
+        "logo" : "part-logos/ballu.jpg",
         "alt" : "Ballu logo"
     }, 
     {
         "id" : 1,
-        "logo": "part-logos/electrolux.png",
+        "logo": "part-logos/electrolux.jpg",
         "alt": "Electrolux logo"
     }, 
     {
@@ -16,17 +16,17 @@
     }, 
     {
         "id" : 3,
-        "logo": "part-logos/teplomash.png",
+        "logo": "part-logos/teplomash.jpg",
         "alt": "Teplomash logo"
     },
     {
         "id" : 4,
-        "logo" : "part-logos/Mitsubishi-electric.png",
+        "logo" : "part-logos/Mitsubishi-electric.jpg",
         "alt" : "Mitsubishi electric logo"
     }, 
     {
         "id" : 5,
-        "logo": "part-logos/system-air.png",
+        "logo": "part-logos/system-air.jpg",
         "alt": "System Air logo"
     }, 
     {
@@ -36,27 +36,27 @@
     }, 
     {
         "id" : 7,
-        "logo": "part-logos/tosot.png",
+        "logo": "part-logos/tosot.jpg",
         "alt": "Tosot logo"
     },
     {
         "id" : 8,
-        "logo": "part-logos/veza.png",
+        "logo": "part-logos/veza.jpg",
         "alt": "Веза logo"
     },
     {
         "id" : 9,
-        "logo": "part-logos/ned.png",
+        "logo": "part-logos/ned.jpg",
         "alt": "NED logo"
     },
     {
         "id" : 10,
-        "logo": "part-logos/lessar.png",
+        "logo": "part-logos/lessar.jpg",
         "alt": "Lessar logo"
     },
     {
         "id" : 11,
-        "logo": "part-logos/daikin.png",
+        "logo": "part-logos/daikin.jpg",
         "alt": "Daikin logo"
     }
 ]

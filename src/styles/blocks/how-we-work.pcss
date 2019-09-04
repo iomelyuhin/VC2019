@@ -6,7 +6,12 @@
     width: 100%;
 
     @include phones {
-    clip-path: polygon(0% 0%, 0% 95%, 50% 100%, 100% 95%, 100% 0%, 50% 5%);
+        clip-path: polygon(0% 0%, 0% 95%, 50% 100%, 100% 95%, 100% 0%, 50% 5%);
+        background-image: url("../images/content/bg-how-we-work-320.jpg");
+
+    }
+    @include tablets {
+        background-image: url("../images/content/bg-how-we-work-768.jpg");
 
     }
 }
