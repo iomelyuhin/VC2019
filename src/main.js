@@ -7,6 +7,6 @@ import "./scripts/slider-parts";
 import "./scripts/slider-reviews";
 import "./scripts/form";
 import "./scripts/formPopup";
-import "./scripts/formWithMessage";
+import "./scripts/questionForm";
 import "./scripts/btns";
 import "./scripts/anchorlink";
