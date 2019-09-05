@@ -8,6 +8,6 @@ $name = trim($_POST["name"]);
 $phone = trim($_POST["phone"]);
 $message = "Имя: $name \nТелефон: $phone ";
 
-$pagetitle = "Заполнена форма ВЫЗВАТЬ СПЕЦИАЛИСТА \"$sitename\"";
+$pagetitle = "Заполнена форма ПОДОБРАТЬ КОНДИЦИОНЕР \"$sitename\"";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: info@almaz43.ru");
 ?>

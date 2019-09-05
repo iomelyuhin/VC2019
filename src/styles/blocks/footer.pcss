@@ -54,43 +54,47 @@
 }
 
 .info--footer {
-    flex-direction: column;
     justify-content: center;
     margin: 0;
-}
+    display: flex;
+    .info__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info__item {
+        padding: 10px 0;
+        font-size: 16px;
+        .info__workingtime, 
+        .info__adress,
+        .info__social{
+            color: rgba($white, .7);
+            
+            &:before {
+                color: $text-in-dark;
+                transition: color .4s;
 
-.info__item {
-    padding: 10px 0;
-    font-size: 16px;
-    .info__workingtime, 
-    .info__adress,
-    .info__social{
-        color: rgba($white, .7);
-        
-        &:before {
+            }
+        }
+        .info__social:hover {
             color: $text-in-dark;
             transition: color .4s;
-
         }
     }
-    .info__social:hover {
-        color: $text-in-dark;
-        transition: color .4s;
-    }
-}
 
-
-.phone--footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: right;
-    .phone__number.phone__number--footer {
-        color: $text-in-dark;
-        font-size: 30px;
     }
-    .phone__callback.phone__callback--footer {
-        color: $white;
-        margin-top: 20px;
+
+    .phone--footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+        .phone__number.phone__number--footer {
+            color: $text-in-dark;
+            font-size: 30px;
+        }
+        .phone__callback.phone__callback--footer {
+            color: $white;
+            margin-top: 20px;
     }
 }

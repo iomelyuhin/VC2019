@@ -1,6 +1,6 @@
-const myForm = document.querySelector('#formWithMessage');
-const overlay = document.querySelector('#formOverlay');
-const button = document.querySelector('#sendFormWithMessage');
+const myForm = document.querySelector('#formPopupCond');
+const overlay = document.querySelector('#formOverlayPopupCond');
+const button = document.querySelector('#sendFormPopupCond');
 
 button.addEventListener('click', e => {
     e.preventDefault();
@@ -9,13 +9,14 @@ button.addEventListener('click', e => {
 
     if (validateForm(myForm)) {
         let formData = new FormData();
-        let url = "./mailQuestion.php";
+        let url = "./mailPopupCond.php";
 
         formData.append("name", myForm.elements.name.value);
         formData.append("phone", myForm.elements.phone.value);
-        formData.append("message", myForm.elements.message.value);
         formData.append("to", "i.omelyuhin@gmail.com");
         
+        
+
         const xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
         xhr.open("POST", url);
@@ -34,7 +35,6 @@ button.addEventListener('click', e => {
                 overlay.classList.add("active");
                 button.classList.add("disabled");
                 clearForm(myForm);
-                  closeForm(myForm);
               }
             
         })
@@ -44,7 +44,6 @@ button.addEventListener('click', e => {
 function clearForm(form) {
     form.elements.name.value = "";
     form.elements.phone.value = "";
-    form.elements.message.value = "";
 }
 
 function closeForm(form) {

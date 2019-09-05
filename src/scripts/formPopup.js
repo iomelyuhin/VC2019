@@ -1,9 +1,8 @@
 const myForm = document.querySelector('#formPopup');
-const send = document.querySelector('#sendFormPopup');
 const overlay = document.querySelector('#formOverlayPopup');
 const button = document.querySelector('#sendFormPopup');
 
-send.addEventListener('click', e => {
+button.addEventListener('click', e => {
     e.preventDefault();
 
 
@@ -34,7 +33,6 @@ send.addEventListener('click', e => {
                 overlay.classList.add("active");
                 button.classList.add("disabled");
                 clearForm(myForm);
-                  closeForm(myForm);
               }
             
         })

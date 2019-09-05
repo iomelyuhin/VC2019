@@ -4,7 +4,7 @@ section.free#projects
             .free__title-wrap
                 h2.free__title.section-title.dark оставьте заявку и мы подготовим проектное решение <span>бесплатно!</span>
                 a.free__example.imgPopup-project(href="#") Пример проектного решения
-            form.free__project-form(action="project-form")#form
+            form.free__project-form#formFree
                 label.project-form__lbl
                     input#username(type="text", name="name" class="project-form__lbl-input form__input" required)
                     .error
@@ -16,5 +16,5 @@ section.free#projects
                     .free__input-icon.input__icon 
                     .free__input-title.input__title Ваш номер телефона
 
-                .form__overlay#formOverlayProj 
-                button(type="submit", class=`button button--free dark` id=`sendForm`) Отправить заявку
+                .form__overlay#formOverlayFree
+                button(type="submit", class=`button button--free dark` id=`sendFreeForm`) Отправить заявку

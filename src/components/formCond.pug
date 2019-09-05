@@ -1,0 +1,18 @@
+.form__wrap-container#condWrap
+    .form-wrap#formCond
+        button(type="button").form__btn-close#closeCond 
+        h2.form__title Оставьте свои данные и мы свяжемся с Вами
+        form.free__project-form#formPopupCond
+            label.project-form__lbl
+                input#username(type="text", name="name" class="project-form__lbl-input form__input" required)
+                .error
+                .free__input-icon.input__icon 
+                .free__input-title.input__title Ваше имя
+            label.project-form__lbl
+                input#userphone(type="tel", name="phone" class="project-form__lbl-input form__input" required)
+                .error
+                .free__input-icon.input__icon 
+                .free__input-title.input__title Ваш номер телефона
+
+            .form__overlay#formOverlayPopupCond
+            button(type="submit", class=`button button--free dark` id=`sendFormPopupCond`) Отправить данные

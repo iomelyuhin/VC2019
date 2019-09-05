@@ -1,6 +1,6 @@
-const myForm = document.querySelector('#formWithMessage');
-const overlay = document.querySelector('#formOverlay');
-const button = document.querySelector('#sendFormWithMessage');
+const myForm = document.querySelector('#formFree');
+const overlay = document.querySelector('#formOverlayFree');
+const button = document.querySelector('#sendFreeForm');
 
 button.addEventListener('click', e => {
     e.preventDefault();
@@ -9,11 +9,10 @@ button.addEventListener('click', e => {
 
     if (validateForm(myForm)) {
         let formData = new FormData();
-        let url = "./mailQuestion.php";
+        let url = "./mailFree.php";
 
         formData.append("name", myForm.elements.name.value);
         formData.append("phone", myForm.elements.phone.value);
-        formData.append("message", myForm.elements.message.value);
         formData.append("to", "i.omelyuhin@gmail.com");
         
         const xhr = new XMLHttpRequest();
@@ -44,7 +43,6 @@ button.addEventListener('click', e => {
 function clearForm(form) {
     form.elements.name.value = "";
     form.elements.phone.value = "";
-    form.elements.message.value = "";
 }
 
 function closeForm(form) {

@@ -1,0 +1,20 @@
+.form__wrap-container#phoneWrap
+    .form-wrap#formPhone
+        button(type="button").form__btn-close#closePhone 
+        h2.form__title Оставьте свой номер телефона и мы перезвоним
+        form.free__project-form#formPopupPhone
+            
+            label.project-form__lbl
+                input(type="tel", 
+                    name="phone" 
+                    class="project-form__lbl-input form__input" 
+                    required)
+                .error
+                .free__input-icon.input__icon 
+                .free__input-title.input__title Ваш номер телефона
+
+            .form__overlay#formOverlayPopupPhone
+            button(
+                type="submit", 
+                class=`button button--free dark` 
+                id=`sendFormPopupPhone`) Отправить данные
