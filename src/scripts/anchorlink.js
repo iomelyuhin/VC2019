@@ -1,5 +1,5 @@
 const links = document.querySelectorAll("[href^='#']");
-const V = 0.3; // scrolling speed
+const V = 0.15; // scrolling speed
 
   for (const iter of links) {
     iter.addEventListener("click", e => {
