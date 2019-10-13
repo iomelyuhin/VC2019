@@ -63,8 +63,10 @@
 }
 
 .objects__title-list {
-    font-family: OpenSans-bold;
+    font-weight: bold;
+    margin-top: 5px;
     line-height: 1;
+    color: #03356a;
     display: flex;
     justify-content: center;
     @include phones {
@@ -73,5 +75,10 @@
 }
 .objects__price {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bold;
+    span {
+        font-family: FA;
+        font-size: 18px;
+    }
 }

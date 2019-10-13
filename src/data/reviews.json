@@ -4,9 +4,9 @@
         "title" : "ресторан \"WoodRoomBar\"",
         "desc" : "Проектирование и монтаж систем вентиляции (приточно-вытяжная и вытяжные системы)",
         "img" : "woodroombar.jpg",
-        "feedback" : "Текст отзыва. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos saepe quam esse odio, amet nemo et optio, laborum nobis deserunt cumque. Consectetur fugiat eius libero? Consectetur fugiat eius libero?",
-        "author" : "Иван Иванович",
-        "position" : "Директор"
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
     },
     {
         "id" : 1,

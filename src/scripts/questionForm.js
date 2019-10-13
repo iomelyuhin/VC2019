@@ -8,13 +8,13 @@ button.addEventListener('click', e => {
 
 
     if (validateForm(myForm)) {
+        ym(55520197, 'reachGoal', 'Question')
         let formData = new FormData();
         let url = "./mailQuestion.php";
 
         formData.append("name", myForm.elements.name.value);
         formData.append("phone", myForm.elements.phone.value);
         formData.append("message", myForm.elements.message.value);
-        formData.append("to", "i.omelyuhin@gmail.com");
         
         const xhr = new XMLHttpRequest();
         xhr.responseType = 'json';

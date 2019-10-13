@@ -8,11 +8,11 @@ button.addEventListener('click', e => {
 
 
     if (validateForm(myForm)) {
+        ym(55520197, 'reachGoal', 'Phone')
         let formData = new FormData();
         let url = "./mailPopupPhone.php";
 
         formData.append("phone", myForm.elements.phone.value);
-        formData.append("to", "i.omelyuhin@gmail.com");
         
         const xhr = new XMLHttpRequest();
         xhr.responseType = 'json';

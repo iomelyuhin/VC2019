@@ -62,3 +62,41 @@
         
     }
 }
+.navigationTop__list {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    padding: 5px 0 10px 0;
+    z-index: 99999;
+    transition: top .3s;
+    &.active {
+        top: 0;
+        transition: top .3s;
+        @include phones {
+            display: none;
+        }
+    }
+    .navigation__link {
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid white;
+        transition: color 0.4s, border-color 0.4s;
+        &:hover {
+            color: $text-in-dark;
+            border-color: $text-in-dark;
+            transition: color 0.4s, border-color 0.4s;
+        }
+    }
+    .navigation__link--tel {
+        border: 1px solid #fff;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    
+}

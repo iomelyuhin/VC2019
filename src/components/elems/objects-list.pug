@@ -1,5 +1,5 @@
 mixin objects-list (items)
-    - var items = [{title: "Заводы и предприятия", icon: "fabric", price: "от 20 000 руб"}, {title: "Бани и сауны", icon: "sauna", price: "от 30 000 руб"}, {title: "Квартиры и офисы", icon: "flat", price: "от 5 000 руб"}, {title: "Частные дома", icon: "home", price: "от 15 000 руб"}, {title: "Бассейны", icon: "pool", price: "от 50 000 руб"}, {title: "Рестораны и кафе", icon: "rest", price: "от 80 000 руб"}, {title: "Торговые центры и магазины", icon: "shop", price: "от 50 000 руб"}];
+    - var items = [{title: "Заводы и предприятия", icon: "fabric", price: "от 20 000 "}, {title: "Бани и сауны", icon: "sauna", price: "от 30 000 "}, {title: "Квартиры и офисы", icon: "flat", price: "от 5 000 "}, {title: "Частные дома", icon: "home", price: "от 15 000 "}, {title: "Бассейны", icon: "pool", price: "от 50 000 "}, {title: "Рестораны и кафе", icon: "rest", price: "от 80 000 "}, {title: "Торговые центры и магазины", icon: "shop", price: "от 50 000 "}];
     
     ul.objects__list
         each item in items
@@ -10,6 +10,7 @@ mixin objects-list (items)
                 .objects__info
                     .objects__title-wrap
                         h3.objects__title-list= item.title
-                    .objects__price= item.price
+                    .objects__price= item.price 
+                        <span></span>
 
 +objects-list(items)

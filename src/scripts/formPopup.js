@@ -4,22 +4,23 @@ const button = document.querySelector('#sendFormPopup');
 
 button.addEventListener('click', e => {
     e.preventDefault();
-
-
-
+    
+    
+    
     if (validateForm(myForm)) {
+        ym(55520197, 'reachGoal', 'Hero')
         let formData = new FormData();
         let url = "./mailPopup.php";
-
+        
         formData.append("name", myForm.elements.name.value);
         formData.append("phone", myForm.elements.phone.value);
-        formData.append("to", "i.omelyuhin@gmail.com");
         
         const xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
         xhr.open("POST", url);
         xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
         xhr.send(formData);
+
 
         xhr.addEventListener('load', () => {
 
@@ -33,6 +34,7 @@ button.addEventListener('click', e => {
                 overlay.classList.add("active");
                 button.classList.add("disabled");
                 clearForm(myForm);
+                
               }
             
         })

@@ -12,3 +12,4 @@ import "./scripts/questionForm";
 import "./scripts/freeForm";
 import "./scripts/btns";
 import "./scripts/anchorlink";
+import "./scripts/navigation";

@@ -26,6 +26,9 @@
         border-color: $text-in-dark;
     }
 }
+.question__input {
+    resize: none;
+} 
 
 .input__title {
     position: absolute;
@@ -44,8 +47,21 @@ input:focus ~ .input__icon {
 input:focus ~ .input__title,
 input:valid ~ .input__title {
   bottom: 50px;
-  font-size: 20px;
-  font-family: OpenSans-bold;
+  font-size: 16px;
+  /* font-family: OpenSans-bold; */
+  color: $text-in-dark;
+  transition: bottom .4s, color .4s, font-size .4s;
+}
+textarea:focus ~ .input__icon {
+  color: $text-in-dark;
+    transition: color 0.4s;
+}
+
+textarea:focus ~ .input__title,
+textarea:valid ~ .input__title {
+  bottom: 75px;
+  font-size: 16px;
+  /* font-family: OpenSans-bold; */
   color: $text-in-dark;
   transition: bottom .4s, color .4s, font-size .4s;
 }

@@ -52,6 +52,7 @@
   ],
   "dependencies": {
     "flickity": "^2.2.1",
+    "headhesive": "^1.2.4",
     "normalize.css": "^8.0.1",
     "promptly": "^3.0.3",
     "pug": "^2.0.3",

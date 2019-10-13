@@ -18,10 +18,10 @@ const wrapperPhone = document.querySelector('#phoneWrap');
 const closeBtnCond = document.querySelector('#closeCond');
 const formOverlayCond = document.querySelector('#formOverlayPopupCond');
 
-const imgBtn = document.querySelector('.imgPopup-proj');
-const imgBtnProj = document.querySelector('.imgPopup-project');
-const imgWrapper = document.querySelector('.imgPopup__container');
-const closeImgBtn = document.querySelector('.imgPopup__btn-close');
+// const imgBtn = document.querySelector('.imgPopup-proj');
+// const imgBtnProj = document.querySelector('.imgPopup-project');
+// const imgWrapper = document.querySelector('.imgPopup__container');
+// const closeImgBtn = document.querySelector('.imgPopup__btn-close');
 
 
 
@@ -67,15 +67,15 @@ function showFormCond() {
 
 }
 
-function showImg() {
+// function showImg() {
 
-    imgWrapper.classList.add('active');
-}
+//     imgWrapper.classList.add('active');
+// }
 
 
-function hideImg() {
-    imgWrapper.classList.remove('active');
-}   
+// function hideImg() {
+//     imgWrapper.classList.remove('active');
+// }   
 
 
 document.addEventListener('click', e => {
@@ -91,7 +91,7 @@ document.addEventListener('click', e => {
     target === phoneBtnFooter ? showFormPhone() : target === wrapperPhone ?  hideFormPhone() : false;
     target === closeBtnPhone ? hideFormPhone()  :  target === wrapperPhone ? hideFormPhone() : false;
 
-    target === closeImgBtn ? hideImg() : target === imgWrapper ? hideImg() : false;
-    target === imgBtn ? showImg() : target === imgWrapper ? hideImg() : false;
-    target === imgBtnProj ? showImg() : target === imgWrapper ? hideImg() : false;
+    // target === closeImgBtn ? hideImg() : target === imgWrapper ? hideImg() : false;
+    // target === imgBtn ? showImg() : target === imgWrapper ? hideImg() : false;
+    // target === imgBtnProj ? showImg() : target === imgWrapper ? hideImg() : false;
   });
