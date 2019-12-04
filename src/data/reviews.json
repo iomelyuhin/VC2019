@@ -25,5 +25,50 @@
         "feedback" : "",
         "author" : "",
         "position" : ""
+    },
+    {
+        "id" : 3,
+        "title" : "Частный дом",
+        "desc" : "Алмазное бурение в частном доме",
+        "img" : "diamond1.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
+    },
+    {
+        "id" : 4,
+        "title" : "Частный дом",
+        "desc" : "Алмазное бурение в частном доме",
+        "img" : "diamond2.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
+    },
+    {
+        "id" : 5,
+        "title" : "Квартира",
+        "desc" : "Закончен проект вентиляции и кондиционирования в квартире",
+        "img" : "flat.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
+    },
+    {
+        "id" : 6,
+        "title" : "Офисные помещения",
+        "desc" : "Монтаж системы кондиционирования в офисных помещениях",
+        "img" : "cond-office.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
+    },
+    {
+        "id" : 6,
+        "title" : "Бассейн",
+        "desc" : "Монтаж приточно-вытяжной вентиляции в бассейне",
+        "img" : "pool.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
     }
 ]
