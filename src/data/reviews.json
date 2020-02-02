@@ -70,5 +70,59 @@
         "feedback" : "",
         "author" : "",
         "position" : ""
+    },
+    {
+        "id" : 7,
+        "title" : "Автосервис",
+        "desc" : "Монтаж приточно-вытяжной вентиляция в автосервисе.",
+        "img" : "review-01.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
+    },
+    {
+        "id" : 8,
+        "title" : "Алмазное бурение",
+        "desc" : "",
+        "img" : "review-02.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
+    },
+    {
+        "id" : 9,
+        "title" : "Коровник, п.Юбилейный",
+        "desc" : "Монтаж системы вентиляции в коровнике, п. Юбилейный",
+        "img" : "review-03.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
+    },
+    {
+        "id" : 10,
+        "title" : "Офис КСМ",
+        "desc" : "Монтаж системы кондиционирования в офисе под ключ",
+        "img" : "review-04.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
+    },
+    {
+        "id" : 11,
+        "title" : "Офис КСМ",
+        "desc" : "Монтаж системы кондиционирования в офисе под ключ",
+        "img" : "review-05.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
+    },
+    {
+        "id" : 12,
+        "title" : "Офис КСМ",
+        "desc" : "Монтаж системы кондиционирования в офисе под ключ",
+        "img" : "review-06.jpg",
+        "feedback" : "",
+        "author" : "",
+        "position" : ""
     }
 ]
