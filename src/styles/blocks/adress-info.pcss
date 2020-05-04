@@ -1,7 +1,7 @@
 .info__list {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
+    // margin-bottom: 10px;
     @include tablets {
         flex-direction: column;
         margin: 0 auto;
@@ -11,6 +11,8 @@
 }
 
 .info__item--header {
+    display: flex;
+    flex-direction: column;
     @include tablets {
         padding: 5px;
     }
@@ -49,6 +51,22 @@
         margin-right: 13px;
         content: "";
         font-family: FA-brands;
+        font-size: 15px;
+        color: $main-color;
+    }
+    &:hover {
+        color: $text-in-dark;
+        transition: color 0.4s;
+    }
+}
+.info__email {
+    text-decoration: none;
+    color: $main-color;
+    transition: color 0.4s;
+    &::before {
+        margin-right: 13px;
+        content: "";
+        font-family: FA;
         font-size: 15px;
         color: $main-color;
     }

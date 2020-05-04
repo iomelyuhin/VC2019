@@ -1,60 +1,120 @@
 .header {
-    padding: 30px 0;
-    @include phones {
-        padding: 10px 0;
+  padding: 30px 0;
 
-    }
+  @include phones {
+    padding: 10px 0;
+  }
 }
 
 .container--header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__top-wrap {
-    display: flex;
-    align-self: normal;
-    @include phones {
-        flex-direction: column;
-        align-items: center;
-    }
+  display: flex;
+  align-self: normal;
+  @include tablets {
+    min-height: 200px;
+    justify-content: space-between;
+    align-items: start;
+  }
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .header__logo {
-    width: 136px;
+  width: 136px;
 }
 
 .header__information {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 40%;
-    margin-top: 5px;
-    flex: 1;
-    @include phones {
-        width: 100%;
-    }
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin-top: 5px;
+  flex: 1;
+  // position: relative;
 
+  @include tablets {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @include phones {
+    width: 100%;
+    position: relative;
+  }
+}
 
 .phone--header {
-    .phone__number {
-        line-height: 1;
-        margin-bottom: 10px;
-        @include tablets {
-            margin-bottom: 10px;
-        }
-        @include phones {
-            font-size: 18px;
-            font-family: OpenSans-bold;
-        }
+  .phone__number {
+    line-height: 1;
+    margin-bottom: 10px;
+    @include tablets {
+      margin-bottom: 10px;
     }
-    .phone__callback {
-
-        text-align: right;
+    @include phones {
+      font-size: 18px;
+      font-family: OpenSans-bold;
     }
+  }
+  .phone__callback {
+    text-align: right;
+  }
 }
 
+.header__information-sale {
+  margin: 0 auto 20px auto;
+  // border: 1px solid $btn-color;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  position: relative;
+  @include tablets {
+    align-items: center;
+  }
+  &::before {
+    position: absolute;
+    left: -40px;
+    content: "";
+    font-family: FA;
+    font-size: 60px;
+    margin-right: 10px;
+    color: $btn-color;
+    @include tablets {
+      display: none;
+    }
+  }
+  .header__information-sale-attension {
+    color: $btn-color;
+    font-weight: bold;
+  }
+  .header__information-sale-desc {
+    // font-size: 10px;
+    @include phones {
+        display: none;
+    }
+  }
+}
 
+.header__information-sale-text {
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+  }
+  @include phones {
+    white-space: normal;
+    text-align: center;
+    width: 95%;
+  }
+}
