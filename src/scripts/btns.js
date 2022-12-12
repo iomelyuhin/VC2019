@@ -18,6 +18,9 @@ const wrapperPhone = document.querySelector('#phoneWrap');
 const closeBtnCond = document.querySelector('#closeCond');
 const formOverlayCond = document.querySelector('#formOverlayPopupCond');
 
+const diamondDrillBtn = document.querySelector(".button--dimond-drill")
+const diamondDrillLink = document.getElementById("diamondDrillLink")
+
 // const imgBtn = document.querySelector('.imgPopup-proj');
 // const imgBtnProj = document.querySelector('.imgPopup-project');
 // const imgWrapper = document.querySelector('.imgPopup__container');
@@ -80,6 +83,10 @@ function showFormCond() {
 
 document.addEventListener('click', e => {
     const target = e.target;
+    if (target===diamondDrillLink) {
+      e.preventDefault();
+      showFormPhone();
+    }
     
     target === heroBtn ? showForm() : target === wrapper ? hideForm() : false;
     target === closeBtn ? hideForm() && hideFormCond()  : target === wrapper || target === wrapperCond ? hideForm() && hideFormCond() : false;
@@ -88,9 +95,9 @@ document.addEventListener('click', e => {
     target === closeBtnCond ? hideFormCond()  :  target === wrapperCond ? hideFormCond() : false;
     
     target === phoneBtn ? showFormPhone() : target === wrapperPhone ?  hideFormPhone() : false;
+    target === phoneBtn ? showFormPhone() : target === wrapperPhone ?  hideFormPhone() : false;
     target === phoneBtnFooter ? showFormPhone() : target === wrapperPhone ?  hideFormPhone() : false;
-    target === closeBtnPhone ? hideFormPhone()  :  target === wrapperPhone ? hideFormPhone() : false;
-
+    target === diamondDrillBtn ? showFormPhone()  :  target === wrapperPhone ? hideFormPhone() : false;
     // target === closeImgBtn ? hideImg() : target === imgWrapper ? hideImg() : false;
     // target === imgBtn ? showImg() : target === imgWrapper ? hideImg() : false;
     // target === imgBtnProj ? showImg() : target === imgWrapper ? hideImg() : false;
